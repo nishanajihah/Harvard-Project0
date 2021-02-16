@@ -1,5 +1,20 @@
+%text {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+%form-shape{
+    display: block;
+    margin: 5px auto;
+    text-align: center;
 
+    //Shape
+    outline: none;
+    color: white;
+    border-radius: 40px;
+    transition: 0.25s;
+}
 
 .form-wrapper {
     margin: auto;
@@ -13,59 +28,50 @@
 	justify-content: center;
 
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform:translate(-50%,-50%);
 }
 
 .form-wrapper .form-content input[type="text"] {
-    border: 0;
+    @extend %form-shape;
     background: none;
-    display: block;
-    margin: 5px auto;
-    text-align: center;
     border: 2px solid #ffffff;
     box-shadow: 3px 3px 8px 2px rgb(197, 194, 194);
-
-    /*circle box size*/
+    
+    /*Shape size*/
     padding: 15px 200px;
-    outline: none;
-    color: white;
-    border-radius: 40px;
-    transition: 0.25s;
 
+    @extend %text;
     color: black;
 }
 
 .form-wrapper .form-content input[type="text"]:focus {
-    font-weight: 200;
-    border-color: #93caee;
-    box-shadow: 3px 3px 8px 2px #93caee;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-color: #b1b1b1;
+    box-shadow: 3px 3px 8px 2px #888888;
 }
 
 .form-wrapper .form-content input[type="submit"] {
-    border: 0;
+    @extend %form-shape;
     background: #ffffff;
-    box-shadow: 3px 4px #888888;
-    display: block;
-    margin: 5px auto;
-    text-align: center;
-    border: 1px solid #888888;
+    box-shadow: 3px 3px #888888;
+    border: 2px solid #888888;
 
-    /*circle box size*/
-    padding: 13px 50px;
-    outline: none;
-    color: white;
-    border-radius: 40px;
-    transition: 0.25s;
+    /*Shape size*/
+    padding: 13px 45px;
     cursor: pointer;
-    font-weight: bold;
 
+    @extend %text;
     color: black;
 }
 
 .form-wrapper .form-content input[type="submit"]:Hover {
-    background: #3faef8;
-    font-weight: bold;
+    background: #888888;
+
+    @extend %text;
     color: white;
 }
