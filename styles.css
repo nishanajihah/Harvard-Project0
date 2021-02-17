@@ -1,10 +1,10 @@
-.link-wrapper, .form-wrapper .form-content input[type=text] {
+.link-wrapper {
   font-size: 14px;
   font-weight: bold;
   font-family: arial, sans-serif;
 }
 
-.form-wrapper .form-content input[type=submit]:Hover, #lucky-btn:Hover, .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text]:focus {
+.form-wrapper .form-content input[type=submit]:Hover, #lucky-btn:Hover, .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text]:focus, .form-wrapper .form-content input[type=text] {
   font-size: 14px;
   font-weight: normal;
   font-family: arial, sans-serif;
@@ -49,6 +49,7 @@
 
 .form-wrapper .form-content input[type=text]:focus {
   text-align: left;
+  color: white;
   border-color: #b1b1b1;
   box-shadow: 3px 3px 8px 2px #888888;
 }

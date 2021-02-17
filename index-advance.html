@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search Advanced</title>
+        <title>Advanced Search</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <!-- <form action="https://www.google.com/search">
+            <input type="text" name="as_q">
+            <input type="submit" value="Advanced Search">
+        </form> -->
+
+        <div class="link-wrapper">
+            <a href="index.html" title="Google Search" target="_self">Google Search</a>
+        </div>
+
+        <div class="form-wrapper">
+            <form action="https://www.google.com/images">
+                <table>
+                    <tr>
+                        <td class="form-content">
+                            <input type="text" name="q" placeholder="Search"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="form-content">
+                            <input type="submit" value="Advanced Search">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </body>
 </html>

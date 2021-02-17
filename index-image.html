@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Image Advanced</title>
+        <title>Image Search</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form action="https://www.google.com.my/search">
-            <input type="text" name="tbm=isch&q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="link-wrapper">
+            <a href="index.html" title="Google Search" target="_self">Google Search</a>
+        </div>
+
+        <div class="form-advanced-wrapper">
+            <form action="https://www.google.com/images">
+                <table>
+                    <tr>
+                        <td class="form-content">
+                            <input type="text" name="q" placeholder="Search"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-content">
+                            <input type="submit" value="Images Search">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </body>
 </html>

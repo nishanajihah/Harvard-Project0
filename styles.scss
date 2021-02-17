@@ -22,6 +22,8 @@
     transition: 0.25s;
 }
 
+$bgwhite: white;
+
 .form-wrapper {
     margin: auto;
     width: 50%;
@@ -46,7 +48,7 @@
 .form-wrapper .form-content input[type="text"] {
     @extend %form-shape;
     border: 2px solid #ffffff;
-    box-shadow: 3px 3px 8px 2px rgb(197, 194, 194);
+    box-shadow: 3px 3px 8px 2px #c5c2c2;
     
     text-align: left;
 
@@ -54,13 +56,14 @@
     padding: 15px 400px 15px 50px;
 
     //Text
-    @extend %text;
+    @extend %text-normal;
     color: black;
 }
 
 .form-wrapper .form-content input[type="text"]:focus {
     @extend %text-normal;
     text-align: left;
+    color: $bgwhite;
 
     border-color: #b1b1b1;
     box-shadow: 3px 3px 8px 2px #888888;
