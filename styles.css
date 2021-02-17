@@ -1,11 +1,11 @@
 .link-wrapper, .form-wrapper .form-content input[type=text] {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   font-family: arial, sans-serif;
 }
 
 .form-wrapper .form-content input[type=submit]:Hover, #lucky-btn:Hover, .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text]:focus {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   font-family: arial, sans-serif;
 }
