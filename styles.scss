@@ -1,11 +1,9 @@
 %text {
-    font-size: 14px;
     font-weight: bold;
     font-family: arial,sans-serif;
 }
 
 %text-normal {
-    font-size: 14px;
     font-weight: normal;
     font-family: arial,sans-serif;
 }
@@ -23,12 +21,12 @@
 }
 
 $bgwhite: white;
+$fontNormal: 14px;
 
 .form-wrapper {
     margin: auto;
     width: 50%;
     padding: 10px;
-    border: 0;
     display: block;
 
     display: flex;
@@ -57,11 +55,14 @@ $bgwhite: white;
 
     //Text
     @extend %text-normal;
+    font-size: $fontNormal;
     color: black;
 }
 
 .form-wrapper .form-content input[type="text"]:focus {
     @extend %text-normal;
+    font-size: $fontNormal;
+
     text-align: left;
     color: $bgwhite;
 
@@ -84,6 +85,7 @@ $bgwhite: white;
 
     //Text
     @extend %text-normal;
+    font-size: $fontNormal;
     color: black;
 }
 
@@ -94,6 +96,7 @@ $bgwhite: white;
 
     //Text
     @extend %text-normal;
+    font-size: $fontNormal;
     color: white;
 }
 
@@ -108,7 +111,9 @@ $bgwhite: white;
     top:0;
     right:0;
 
-    @extend %text
+    @extend %text;
+    font-size: $fontNormal;
+    
 }
 
 .link-wrapper a {
@@ -123,4 +128,97 @@ a:link, a:visited {
 a:hover, a:active {
     text-decoration: underline;
     color: #888888;
+}
+
+//----- ADVANCED -----
+
+.title-wrapper {
+    position:absolute;
+    top:10%;
+    left:5%;
+}
+
+.form-advanced-wrapper {
+    // border: 1px solid black;
+
+    margin: 5px 10px;
+    width: 95%;
+    padding: 20px 20px;
+    display: block;
+    text-align: left;
+
+    position:absolute;
+    top:30%;
+    left:0;
+}
+
+.form-advanced-wrapper table {
+    // padding: 20px 20px 20px 20px;
+    // margin: 0;
+    width: 100%;
+    // border: 1px solid black;
+}
+
+.form-advanced-wrapper .form-advanced-table tr, td {
+    // border: 1px solid black;
+   
+    padding: 5px 15px 5px 15px;
+
+    @extend %text-normal;
+    font-size: 14px;
+}
+
+.form-advanced-content {
+    // border: 1px solid black;
+    text-align: left;
+    width: 15%;
+}
+
+.form-textmain-content {
+    // border: 1px solid black;
+    text-align: left;
+
+    @extend %text-normal;
+    font-size: 16px;
+}
+
+// .form-textc1-content {
+//     border: 1px solid black;
+//     text-align: left;
+//     width: 12%;
+
+//     @extend %text-normal;
+//     font-size: $fontNormal;
+// }
+
+// .form-textc3-content {
+//     border: 1px solid black;
+//     text-align: left;
+
+//     @extend %text-normal;
+//     font-size: $fontNormal;
+// }
+
+.form-advanced-wrapper .form-advanced-content input[type="text"] {
+    @extend %form-shape;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 3px 8px 2px #c5c2c2;
+    
+    text-align: left;
+
+    // /*Shape size*/
+    padding: 5px 300px 5px 30px;
+
+    //Text
+    @extend %text-normal;
+    color: black;
+}
+
+.form-advanced-wrapper .form-advanced-content input[type="text"]:focus {
+    @extend %text-normal;
+    text-align: left;
+    color: black;
+
+    border-color: #51b4e2;
+    box-shadow: 3px 3px 8px 2px #888888;
 }

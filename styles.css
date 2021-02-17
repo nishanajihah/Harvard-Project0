@@ -1,16 +1,14 @@
 .link-wrapper {
-  font-size: 14px;
   font-weight: bold;
   font-family: arial, sans-serif;
 }
 
-.form-wrapper .form-content input[type=submit]:Hover, #lucky-btn:Hover, .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text]:focus, .form-wrapper .form-content input[type=text] {
-  font-size: 14px;
+.form-advanced-wrapper .form-advanced-content input[type=text]:focus, .form-advanced-wrapper .form-advanced-content input[type=text], .form-textmain-content, .form-advanced-wrapper .form-advanced-table tr, td, .form-wrapper .form-content input[type=submit]:Hover, #lucky-btn:Hover, .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text]:focus, .form-wrapper .form-content input[type=text] {
   font-weight: normal;
   font-family: arial, sans-serif;
 }
 
-.form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text] {
+.form-advanced-wrapper .form-advanced-content input[type=text], .form-wrapper .form-content input[type=submit], #lucky-btn, .form-wrapper .form-content input[type=text] {
   display: block;
   margin: 8px 5px;
   background: none;
@@ -24,7 +22,6 @@
   margin: auto;
   width: 50%;
   padding: 10px;
-  border: 0;
   display: block;
   display: flex;
   justify-content: center;
@@ -44,10 +41,12 @@
   box-shadow: 3px 3px 8px 2px #c5c2c2;
   text-align: left;
   padding: 15px 400px 15px 50px;
+  font-size: 14px;
   color: black;
 }
 
 .form-wrapper .form-content input[type=text]:focus {
+  font-size: 14px;
   text-align: left;
   color: white;
   border-color: #b1b1b1;
@@ -61,6 +60,7 @@
   text-align: center;
   padding: 8px 15px;
   cursor: pointer;
+  font-size: 14px;
   color: black;
 }
 
@@ -68,6 +68,7 @@
   border: 2px solid #c5c2c2;
   background: #cac8c8;
   text-align: center;
+  font-size: 14px;
   color: white;
 }
 
@@ -80,6 +81,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  font-size: 14px;
 }
 
 .link-wrapper a {
@@ -94,6 +96,57 @@ a:link, a:visited {
 a:hover, a:active {
   text-decoration: underline;
   color: #888888;
+}
+
+.title-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.form-advanced-wrapper {
+  margin: 5px 10px;
+  width: 95%;
+  padding: 20px 20px;
+  display: block;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.form-advanced-wrapper table {
+  width: 100%;
+}
+
+.form-advanced-wrapper .form-advanced-table tr, td {
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+}
+
+.form-advanced-content {
+  text-align: left;
+  width: 15%;
+}
+
+.form-textmain-content {
+  text-align: left;
+  font-size: 16px;
+}
+
+.form-advanced-wrapper .form-advanced-content input[type=text] {
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 8px 2px #c5c2c2;
+  text-align: left;
+  padding: 5px 300px 5px 30px;
+  color: black;
+}
+
+.form-advanced-wrapper .form-advanced-content input[type=text]:focus {
+  text-align: left;
+  color: black;
+  border-color: #51b4e2;
+  box-shadow: 3px 3px 8px 2px #888888;
 }
 
 /*# sourceMappingURL=styles.css.map */
