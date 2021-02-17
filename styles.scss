@@ -7,7 +7,6 @@
 %form-shape{
     display: block;
     margin: 5px auto;
-    text-align: center;
 
     //Shape
     outline: none;
@@ -22,7 +21,6 @@
     padding: 10px;
     border: 0;
     display: block;
-    text-align: center;
 
     display: flex;
 	justify-content: center;
@@ -39,9 +37,12 @@
     border: 2px solid #ffffff;
     box-shadow: 3px 3px 8px 2px rgb(197, 194, 194);
     
-    /*Shape size*/
-    padding: 15px 200px;
+    text-align: left;
 
+    // /*Shape size*/
+    padding: 15px 400px 15px 50px;
+
+    //Text
     @extend %text;
     color: black;
 }
@@ -50,6 +51,8 @@
     font-size: 15px;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
+
+    text-align: left;
 
     border-color: #b1b1b1;
     box-shadow: 3px 3px 8px 2px #888888;
@@ -61,10 +64,13 @@
     box-shadow: 3px 3px #888888;
     border: 2px solid #888888;
 
-    /*Shape size*/
-    padding: 13px 45px;
+    text-align: center;
+
+    //Shape size
+    padding: 10px 25px;
     cursor: pointer;
 
+    //Text
     @extend %text;
     color: black;
 }
@@ -72,6 +78,9 @@
 .form-wrapper .form-content input[type="submit"]:Hover {
     background: #888888;
 
+    text-align: center;
+
+    //Text
     @extend %text;
     color: white;
 }

@@ -7,7 +7,6 @@
 .form-wrapper .form-content input[type=submit], .form-wrapper .form-content input[type=text] {
   display: block;
   margin: 5px auto;
-  text-align: center;
   outline: none;
   color: white;
   border-radius: 40px;
@@ -20,7 +19,6 @@
   padding: 10px;
   border: 0;
   display: block;
-  text-align: center;
   display: flex;
   justify-content: center;
   position: absolute;
@@ -33,8 +31,8 @@
   background: none;
   border: 2px solid #ffffff;
   box-shadow: 3px 3px 8px 2px #c5c2c2;
-  /*Shape size*/
-  padding: 15px 200px;
+  text-align: left;
+  padding: 15px 400px 15px 50px;
   color: black;
 }
 
@@ -42,6 +40,7 @@
   font-size: 15px;
   font-weight: normal;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
   border-color: #b1b1b1;
   box-shadow: 3px 3px 8px 2px #888888;
 }
@@ -50,14 +49,15 @@
   background: #ffffff;
   box-shadow: 3px 3px #888888;
   border: 2px solid #888888;
-  /*Shape size*/
-  padding: 13px 45px;
+  text-align: center;
+  padding: 10px 25px;
   cursor: pointer;
   color: black;
 }
 
 .form-wrapper .form-content input[type=submit]:Hover {
   background: #888888;
+  text-align: center;
   color: white;
 }
 
