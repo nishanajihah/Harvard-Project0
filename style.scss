@@ -187,14 +187,14 @@ a:hover, a:active {
 }
 
 .form-box .form-data input[type="submit"]:Hover, #lucky-btn:Hover {
-    border: 2px solid #4b8df8;
-    background: #4b8df8;
+    border: 2px solid #bdbaba;
+    // background: #c9caca;
     text-align: center;
 
     //Text
     @extend %text-normal;
     font-size: $fontNormal;
-    color: white;
+    color: black;
 }
 
 // ===================================== 
