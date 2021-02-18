@@ -137,7 +137,7 @@ a:hover, a:active {
 }
 
 .form-box .form-data input[type=submit]:Hover, #lucky-btn:Hover {
-  border: 2px solid #bdbaba;
+  border: 2px solid #d8cdcd;
   text-align: center;
   font-size: 14px;
   color: black;
