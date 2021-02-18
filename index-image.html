@@ -3,6 +3,7 @@
     <head>
         <title>Image Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -13,7 +14,7 @@
             </div>
 
             <div class="box">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Image logo" />
             </div>
     
             <div class="form-box">
@@ -21,7 +22,11 @@
                     <table>
                         <tr>
                             <td class="form-data">
-                                <input type="text" name="q" placeholder="Search"></td>
+                                <div class="input-box">
+                                     <i class="fa fa-search icon" aria-hidden="true"></i>
+                                     <input class="input-field" type="text" name="q" placeholder="Search">
+                                </div> 
+                            </td>
                         </tr>
                         <tr>
                             <td class="form-data">

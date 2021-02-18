@@ -35,13 +35,17 @@ $fontSmall: 13px;
     }
 }
 
-// ===================================== 
-// --------------- INDEX ---------------
-// ===================================== 
+// ====================================================
+// --------------- INDEX AND INDEX-IMAGE---------------
+// ==================================================== 
 
 * {
     box-sizing: border-box;
     font-family: arial,sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 .link-box {
@@ -55,7 +59,7 @@ $fontSmall: 13px;
     font-size: $fontNormal;
 }
 
-.link-box a, .advanced-box a {
+.link-box a {
     margin: 5px;
 }
 
@@ -94,8 +98,35 @@ a:hover, a:active {
 // ===================================== 
 
 .form-data {
+    // border: 1px solid black;
     display: block;
     text-align: center;
+}
+
+// ---------------- ICON --------------
+.input-box {
+    // border: 1px solid black;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.input-box i { 
+    // border: 1px solid black;
+    position: absolute; 
+    top:44.4%;
+    left:29.8%;
+} 
+  
+.icon {
+    // border: 1px solid black;
+    padding: 10px; 
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
 }
 
 .form-box .form-data input[type="text"] {
@@ -159,61 +190,28 @@ a:hover, a:active {
 // --------- INDEX ADVANCE -------------
 // =====================================
 
-.advanced {
-    border: 1px solid black;
-    // display: block;
-    align-items: center;
+// ----------- HEADER -----------
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding:  10px 0 10px 20px;
 
-    // a {
-    //     color: black;
-    //     padding: 10px;
-    //     text-decoration: none;
-    // }
+    @extend %text;
+    font-size: $fontNormal;
 
-    &-right {
-        @extend .advanced;
-        background-color: #f1f1f1;
-        height: 50px;
-    }
-
-    &-right-logo {
-        @extend .advanced;
-        padding: 10px;
-
-        img {
-            height: 30px;
-        }
-    }
-
-    &-links {
-        @extend .advanced;
-        text-align: right;
-
-        @extend %text;
-        font-size: $fontNormal;
-    }
 }
 
+.header img.logo {
+    margin: 10px 25px 5px 0;
+    width: 90px;
+}
 
-// .link-box2 {
-//     border: 1px solid black;
+.header-right {
+    margin: 15px 25px 5px 0;
+    float: right;
+}
 
-//     margin: 5px auto;
-//     padding: 20px 25px;
-//     text-align: right;
-
-//     @extend %text;
-//     font-size: $fontNormal;
-// }
-
-// .logo img {
-//     padding: 10px;
-
-//     img {
-//         height: 30px;
-//     }
-// }
-
+// --------- SHAPE ----------
 .box2 {
     // border: 1px solid black;
     color: #dd2525;
@@ -319,3 +317,26 @@ hr {
     border-top: 1px solid #0000001a;
     border-bottom: 1px solid #ffffff4d;
 }
+
+// --------------------------------------------------------------------
+.search-container {
+    display: flex;
+    flex-direction: column;
+    /* Align the search container in the center of the viewport */
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  .search-container .search-field {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 1px solid #afafaf;
+    align-items: center;
+    margin: 10px;
+    padding-left: 15px;
+  }
+  .search-container .search-field input {
+    border: none;
+    border-radius: 25px;
+  }

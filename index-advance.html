@@ -7,15 +7,14 @@
     </head>
     <body>
 
+        <!-- BODY WRAPPER : START -->
         <div class="wrapper">
-            <div class="advanced-box">  
-                
-                <div class="advanced-right-logo">
-                    <a href="index.html">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
-                    </a>
-                </div>
-                <div class="advanced-left-link">
+
+            <!-- HEADER SECTION : START--> 
+            <div class="header">
+                <!-- <a href="#default" class="logo">CompanyLogo</a> -->
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"  class="logo"/>
+                <div class="header-right">
                     <a href="index.html" title="Google Search" target="_self">Google Search</a>
                 </div>
             </div>
@@ -23,9 +22,11 @@
             <div class="box2">
                 <h3>Advanced Search</h3>
             </div>
+            <!-- HEADER SECTION : END -->
 
             <hr>
-    
+            
+            <!-- FORM SECTION : START -->
             <div class="form-table">
                 <form action="https://www.google.com/search">
                     <table>
@@ -64,14 +65,17 @@
                             <tr>     
                                 <td colspan="2" class="form-data-btn" >
                                     <input type="submit" value="Advanced Search">
+                                    <input type="hidden" name="tbm" value="isch"/>
                                 </td>
                             </tr>
                         </tbody>
                     </table>   
                 </form>
             </div>
+            <!-- FORM SECTION : END -->
         </div>
-
+        <!-- BODY WRAPPER : END -->
+        
         <hr>
 
     </body>
