@@ -23,6 +23,11 @@ $fontSmall: 13px;
     transition: 0.25s;
 }
 
+%logo {
+    text-align: center;
+    width: 100%;
+}
+
 @media only screen and (max-width:600px) {
     
     input[type="text"], input[type="button"], 
@@ -75,15 +80,20 @@ a:hover, a:active {
 
 .box {
     // border: 1px solid black;
-    text-align: center;
-    width: 100%;
-    padding: 100px 10px 0px 10px;
+    @extend %logo;
+    padding: 105px 10px 0px 10px;
+}
+
+.box-img {
+    // border: 1px solid black;
+    @extend %logo;
+    padding: 75px 10px 0px 10px;
 }
 
 .form-box {
     // border: 1px solid black;
 
-    margin: 5px auto;
+    margin: 0px auto;
     width: 100%;
     padding: 0px 20px;
     display: block;
@@ -115,6 +125,7 @@ a:hover, a:active {
     position: absolute; 
     top:44.4%;
     left:29.8%;
+    color: #888888;
 } 
   
 .icon {

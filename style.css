@@ -18,6 +18,11 @@
   transition: 0.25s;
 }
 
+.box-img, .box {
+  text-align: center;
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
   input[type=text], input[type=button],
 .form-box .form-table .form-data table, tr, td, th {
@@ -59,13 +64,15 @@ a:hover, a:active {
 }
 
 .box {
-  text-align: center;
-  width: 100%;
-  padding: 100px 10px 0px 10px;
+  padding: 105px 10px 0px 10px;
+}
+
+.box-img {
+  padding: 75px 10px 0px 10px;
 }
 
 .form-box {
-  margin: 5px auto;
+  margin: 0px auto;
   width: 100%;
   padding: 0px 20px;
   display: block;
@@ -87,6 +94,7 @@ a:hover, a:active {
   position: absolute;
   top: 44.4%;
   left: 29.8%;
+  color: #888888;
 }
 
 .icon {
