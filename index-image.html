@@ -2,27 +2,36 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="link-wrapper">
-            <a href="index.html" title="Google Search" target="_self">Google Search</a>
+        
+        <div class="wrapper">
+            <div class="link-box">  
+                <a href="index.html" title="Google Search" target="_self">Google Search</a>
+            </div>
+
+            <div class="box">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"/>
+            </div>
+    
+            <div class="form-box">
+                <form action="https://google.com/images">
+                    <table>
+                        <tr>
+                            <td class="form-data">
+                                <input type="text" name="q" placeholder="Search"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-data">
+                                <input type="submit" value="Images Search">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
 
-        <div class="form-wrapper">
-            <form action="https://www.google.com/images">
-                <table>
-                    <tr>
-                        <td class="form-content">
-                            <input type="text" name="q" placeholder="Search"></td>
-                    </tr>
-                    <tr>
-                        <td class="form-content">
-                            <input type="submit" value="Images Search">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
     </body>
 </html>
