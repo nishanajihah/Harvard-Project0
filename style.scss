@@ -329,25 +329,4 @@ hr {
     border-bottom: 1px solid #ffffff4d;
 }
 
-// --------------------------------------------------------------------
-.search-container {
-    display: flex;
-    flex-direction: column;
-    /* Align the search container in the center of the viewport */
-    justify-content: center;
-    align-items: center;
-    height: 90%;
-  }
-  .search-container .search-field {
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    border: 1px solid #afafaf;
-    align-items: center;
-    margin: 10px;
-    padding-left: 15px;
-  }
-  .search-container .search-field input {
-    border: none;
-    border-radius: 25px;
-  }
+
